@@ -28,7 +28,7 @@ lib.DifySeccomp(65537, 1001, 1)
 
 import pandas as pd
 
-
+# 此处main 方法不要带具体参数
 def main() -> dict:
     s = pd.Series([1, 3, 5, 6, 8])
     return {
