@@ -20,7 +20,7 @@ docker compose up启动后，进入docker-sandbox-1容器中，进入/dependenci
 将获得的缺少的系统调用拷贝出来，和默认的系统调用合并
 
 #### 默认系统调用
-可以根据 cpu 架构不同在系统中执行 get_default_syscalls_amd64或get_default_syscalls_arm64
+可以根据 cpu 架构不同在系统中/dependencies/code目录下执行 get_default_syscalls_amd64或get_default_syscalls_arm64获取默认系统调用
 
 例如arm64 
 > ./get_default_syscalls_arm64
