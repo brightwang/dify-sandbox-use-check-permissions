@@ -39,8 +39,8 @@ arm64 默认系统调用
 修改 
 > allowed_syscalls: [...合并后的系统调用数组]
 
-最后重启docker compose up即可调用
+最后重启,docker compose down 在docker compose up即可调用
 ### 测试代码示例
-```shell
+```shell 
 curl -X POST http://localhost:8194/v1/sandbox/run -H "X-Api-Key: dify-sandbox" -H "Content-Type: application/json" -d '{"language":"python3","preload":"preload","enable_network":true,"code":"import pandas as pd"}'
 ```
