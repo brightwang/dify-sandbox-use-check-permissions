@@ -9,7 +9,7 @@ failed_syscalls=()
 
 for i in $(seq 0 499); do
     # 移除第i个数字及其后面的逗号
-    TEST_STRING=$(printf '%s\n' "$list" | \
+    TEST_STRING=$(printf '%s\n' "$ORIGINAL" | \
     sed -E "s/(^|,)$i(,|\$)/\1\2/" | \
     sed -E 's/,,+/,/g; s/^,//; s/,$//')
     # printf '%s\n' "$TEST_STRING"
